@@ -3,6 +3,12 @@ from stats import get_num_words, count_letters, sort_count
 
 def main ():
 
+    # sys.argv handling
+
+    if len(sys.argv) != 2:
+        print("Usage: python3 main.py <path_to_book>")
+        sys.exit(1)
+
     # Count number of words in frankenstein.txt
 
     #path = "books/frankenstein.txt"
